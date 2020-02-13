@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    <domain-config>
+        <domain includeSubdomains="true">example.org</domain>
+        <pin-set>
+            <pin digest="SHA-256">i9HalScvf6T/skE3/A7QOq5n5cTYs8UHNOEFCnkguSI=</pin>
+            <pin digest="SHA-256">5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=</pin>
+            <pin digest="SHA-256">r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
